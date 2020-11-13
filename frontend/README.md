@@ -1,4 +1,4 @@
-# ark-desktop
+# vue-demo
 
 ## Project setup
 ```
