@@ -6,8 +6,8 @@
 </template>
 
 
-<script lang="ts">
-import { runWorkflow } from 'arkfbp-browser/lib/flow'
+<script>
+import { runWorkflow } from 'arkfbp/lib/flow'
 import { Main } from '@/flows/helloworld'
 
 export default {
@@ -15,7 +15,7 @@ export default {
   methods: {
     run: function() {
       console.info('to run workflow')
-      runWorkflow(Main).then(() => {
+      runWorkflow(new Main()).then(() => {
         console.info('main flow finished')
       })
     }

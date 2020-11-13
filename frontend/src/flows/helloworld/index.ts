@@ -1,6 +1,6 @@
 
-import { Flow } from 'arkfbp-browser/lib/flow'
-import { Graph } from 'arkfbp-browser/lib/graph'
+import { Flow } from 'arkfbp/lib/flow'
+import { Graph } from 'arkfbp/lib/graph'
 
 import { SayHi } from './nodes/sayHi'
 import { SayGoodbye } from './nodes/sayGoodbye'

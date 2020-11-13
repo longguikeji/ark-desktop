@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "arkfbp-browser": "0.0.3",
+    "@types/cookie": "^0.4.0",
+    "arkfbp": "0.0.3",
     "axios": "^0.19.0",
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
@@ -30,6 +31,7 @@
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "typescript": "^3.7.5",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack-env": "^0.8.0"
   }
 }

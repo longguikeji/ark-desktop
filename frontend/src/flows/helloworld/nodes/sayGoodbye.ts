@@ -1,4 +1,4 @@
-import { FunctionNode } from 'arkfbp-browser/lib/functionNode'
+import { FunctionNode } from 'arkfbp/lib/functionNode'
 
 export class SayGoodbye extends FunctionNode {
 
