@@ -2,8 +2,8 @@
 import { Flow } from 'arkfbp/lib/flow'
 import { Graph } from 'arkfbp/lib/graph'
 
-import { SayHi } from './nodes/sayHi'
-import { SayGoodbye } from './nodes/sayGoodbye'
+import { Redirect } from './nodes/redirect'
+import { GetLoginUrl } from './nodes/getLoginUrl'
 
 export default class Main extends Flow {
 
@@ -11,15 +11,14 @@ export default class Main extends Flow {
         const g = new Graph()
         g.nodes = [
             {
-                'cls': SayHi,
-                'id': 1,
-                'next': 2,
+                'cls': GetLoginUrl,
+                'id': 'get_login_url',
+                'next': 'redirect'
             },
             {
-                'cls': SayGoodbye,
-                'id': 2,
+                'cls': Redirect,
+                'id': 'redirect',
             },
-
         ]
 
         return g
